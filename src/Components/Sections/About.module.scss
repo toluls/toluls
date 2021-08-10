@@ -1,0 +1,21 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.about {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: $color-main;
+  color: $color-white;
+
+  & h1 {    
+    padding: 1.5rem;
+    border-bottom: 1px solid $color-white;
+    font-weight: 300;
+  }
+
+  p {
+    padding: 1.5rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+  }
+}
