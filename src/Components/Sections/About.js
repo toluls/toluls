@@ -1,30 +1,28 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import classes from "./About.module.scss";
 
-const About = () => {
+const About = forwardRef((_props, ref) => {
   return (
     <div className={classes.about}>
-      <h1>About</h1>
-      <p>
-        My name is Tolulope Saliu. I'm a passionate frontend developer with
-        focus on web and mobile development. I love coding and enjoy
-        transforming ideas and designs into clean, elegant code. For formal
-        education, I have a Bachelor of Science in Psychology.
-      </p>
+      <h1 ref={ref}>About Me</h1>
+      <div className={classes.content}>
+        <p>
+          My name is Tolulope Saliu. I'm a passionate frontend developer with
+          focus on React. I have <strong>over four years</strong> experience in transforming ideas and designs into clean, elegant code. For formal education, I have a Bachelor of Science in Psychology.
+        </p>
 
-      <p>
-        I am based in Lagos, Nigeria. Location doesn't hinder my work as I have
-        experience working remotely with individuals and teams in various
-        countries. Kindly send an email to <strong>hello@toluls.com</strong> if you want to
-        reach me.
-      </p>
+        <p>
+          I'm based in Lagos, Nigeria. However, location doesn't hinder my work as I have
+          experience working remotely with individuals and teams in various
+          countries.
+        </p>
 
-      <p>
-        My current stack: HTML5, CSS3, Javascript, SASS, React, Firebase. I have
-        also worked with bootstrap and jquery in the past.
-      </p>
+        <p>
+        <strong>My current stack:</strong> HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, React Native, Firebase, amogst others. I have also worked with WordPress, bootstrap and jquery in the past.
+        </p>
+      </div>
     </div>
   );
-};
+});
 
 export default About;
