@@ -4,7 +4,7 @@ import classes from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <p className={classes.foot}>Footer</p>
+      <p>© 2021 Tolulope Saliu. All Rights Reserved.</p>
     </footer>
   );
 }
