@@ -1,0 +1,59 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.welcome {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  @include respond($mid) {
+    flex-flow: row wrap;
+    padding: 2rem 2rem;
+    text-align: left;
+  }
+
+  & h1 {
+    padding-top: 3rem;
+    font-weight: 300;
+
+    @include respond($mid) {
+      padding-top: 0;
+    }
+  }
+
+  & p {
+    margin-top: 2rem;
+  }
+}
+
+.name {
+  display: block;
+  color: $color-main;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.imageContainer {
+  @include respond($mid) {
+    order: 2;
+  }
+}
+
+
+.image {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba($color-main, .1);
+}
+
+.textContainer {
+  @include respond($mid) {
+    order: 1;
+  }
+}

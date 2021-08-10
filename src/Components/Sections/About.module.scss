@@ -1,0 +1,8 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.about {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: $color-main;
+}
