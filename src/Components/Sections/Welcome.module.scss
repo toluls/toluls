@@ -1,7 +1,7 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/variables.scss';
 
-.welcome {
+.container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -10,6 +10,7 @@
   font-size: 1.8rem;
   padding: 4rem 2rem 8rem;
   text-align: center;
+  animation: bounce 1.5s ease;
 
   @include respond($mid) {
     flex-flow: row wrap;
@@ -60,5 +61,17 @@
 .textContainer {
   @include respond($mid) {
     order: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
