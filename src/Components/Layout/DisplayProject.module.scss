@@ -86,11 +86,11 @@
 }
 
 .action {
-  display: block;
-  padding: 1rem 3rem;
+  padding: .7rem 3rem;
   background-color: $color-main;
   color: $color-white;
   border-radius: 3rem;
+  border: 2px solid $color-main;
   font-size: 1.3rem;
   opacity: 1;
   text-transform: uppercase;

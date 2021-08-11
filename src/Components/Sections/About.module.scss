@@ -32,3 +32,24 @@
     padding: 5rem 3rem 3rem;
   }
 }
+
+.action {
+  margin: 1.5rem;
+  animation: pulse 1s ease infinite;
+
+  @include respond($mid) {
+    margin-top: 4rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
