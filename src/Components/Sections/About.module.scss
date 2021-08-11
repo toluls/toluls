@@ -2,20 +2,32 @@
 @import '../../sass/variables.scss';
 
 .about {
-  padding: 2rem;
   min-height: 100vh;
   background-color: $color-main;
   color: $color-white;
 
   & h1 {    
-    padding: 1.5rem;
-    border-bottom: 1px solid $color-white;
+    padding: 2rem;
     font-weight: 300;
+    background-color: $color-black;
+    border-bottom: .5rem solid $color-white;
+
+    @include respond($mid) {
+      padding: 2rem 4.5rem;
+    }
   }
 
   p {
     padding: 1.5rem;
     line-height: 1.5;
     color: #f1f1f1;
+  }
+}
+
+.content {
+  padding: 1rem;
+
+  @include respond($mid) {
+    padding: 5rem 3rem 3rem;
   }
 }
