@@ -4,7 +4,7 @@ import classes from "./About.module.scss";
 
 const About = forwardRef((_props, ref) => {
   return (
-    <div className={classes.about}>
+    <div className={classes.container}>
       <h1 ref={ref}>About Me</h1>
       <div className={classes.content}>
         <p>

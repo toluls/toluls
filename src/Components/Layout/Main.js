@@ -3,6 +3,7 @@ import classes from './Main.module.scss';
 import Welcome from '../Sections/Welcome';
 import About from '../Sections/About';
 import Projects from '../Sections/Projects';
+import Contact from '../Sections/Contact';
 
 const Main = () => {
   const aboutRef = useRef();
@@ -21,6 +22,7 @@ const Main = () => {
       <Welcome onAboutClick={handleAboutClick} onProjectClick={handleProjectClick}/>
       <About ref={aboutRef} />
       <Projects ref={projectsRef} />
+      <Contact />
     </main>
   );
 }
