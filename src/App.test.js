@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders "Tolulope"', () => {
+test('renders "Front-end developer heading"', () => {
   render(<App />);
-  const nameText = screen.getByText(/Tolulope/i);
+  const nameText = screen.getByText(/A creative and passionate front-end developer/i);
   expect(nameText).toBeInTheDocument();
 });
