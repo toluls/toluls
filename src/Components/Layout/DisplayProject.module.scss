@@ -1,0 +1,115 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    padding: .5rem;
+    
+    @include respond($mid) {
+      flex-flow: row nowrap;
+      padding: 4rem;
+      align-items: flex-start;
+    }
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-main;
+  padding: 1rem;
+}
+
+.imageContainer {
+  width: 95%;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .5);
+  background-color: $color-black;
+
+  & img {
+    width: 100%;
+  }
+
+  @include respond($mid) {
+    flex: 1;
+    margin-right: 4rem;
+  }
+
+  &.right {
+    @include respond($mid) {
+      order: 1;
+      margin-right: 0;
+      margin-left: 4rem;
+    }
+  }
+}
+
+.details {
+  text-align: center;
+
+  @include respond($mid) {
+    flex: 1.5;
+    text-align: left;
+  }
+}
+
+.stack {
+  margin: 1.5rem 0;
+  text-align: center;
+
+  @include respond($mid) {
+    text-align: left;
+  }
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  @include respond($mid) {
+    margin-top: 2rem;
+    justify-content: flex-start;
+  }
+}
+
+.action {
+  display: block;
+  padding: 1rem 3rem;
+  background-color: $color-main;
+  color: $color-white;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  opacity: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  @include respond($mid) {
+    margin-right: 2rem;
+  }
+
+  &.source {
+    background-color: $color-white;
+    color: $color-main;
+    border: 2px solid $color-main;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+   opacity: .9;
+  }
+}
