@@ -19,7 +19,7 @@ const About = forwardRef((_props, ref) => {
         </p>
 
         <p>
-        <strong>My current stack:</strong> <br />HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, React Native, Firebase, amogst others. I have also worked with WordPress, bootstrap and jquery in the past.
+        <strong>My current stack:</strong> <br />HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, React Native, Firebase, amongst others. I have also worked with WordPress, bootstrap and jquery during the course of my career.
         </p>
       </div>
     </div>
