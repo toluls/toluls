@@ -32,7 +32,7 @@ const lockdownDetails = (
 
 const Projects = forwardRef((_props, ref) => {
   return (
-    <div className={classes.projects}>
+    <div className={classes.container}>
       <h1 ref={ref}>Projects</h1>
       <div className={classes.content}>
         <DisplayProject

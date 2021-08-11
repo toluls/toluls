@@ -5,7 +5,7 @@ import classes from './Welcome.module.scss';
 
 const Welcome = props => {
   return (
-    <div className={classes.welcome}>
+    <div className={classes.container}>
       <div className={classes.imageContainer}>
         <img className={classes.image} src={tolulope} alt="Tolulope Saliu" />
       </div>

@@ -1,10 +1,11 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/variables.scss';
 
-.about {
+.container {
   min-height: 100vh;
   background-color: $color-main;
   color: $color-white;
+  padding-bottom: 4rem;
 
   & h1 {    
     padding: 2rem;
@@ -20,7 +21,7 @@
   p {
     padding: 1.5rem;
     line-height: 1.5;
-    color: #f1f1f1;
+    color: $color-light;
   }
 }
 
@@ -29,5 +30,26 @@
 
   @include respond($mid) {
     padding: 5rem 3rem 3rem;
+  }
+}
+
+.action {
+  margin: 1.5rem;
+  animation: pulse 1s ease infinite;
+
+  @include respond($mid) {
+    margin-top: 4rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
