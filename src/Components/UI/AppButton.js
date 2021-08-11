@@ -3,7 +3,12 @@ import classes from "./AppButton.module.scss";
 
 const AppButton = (props) => {
   return (
-    <button className={`${classes.button} ${props.outline && classes.outline}`} onClick={props.onClick}>
+    <button
+      className={`${classes.button} ${props.outline && classes.outline} ${
+        props.className
+      }`}
+      onClick={props.onClick}
+    >
       {props.text}
     </button>
   );

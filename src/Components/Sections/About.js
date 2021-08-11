@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 import classes from "./About.module.scss";
+// import AppButton from "../UI/AppButton";
 
 const About = forwardRef((_props, ref) => {
   return (
@@ -18,7 +19,7 @@ const About = forwardRef((_props, ref) => {
         </p>
 
         <p>
-        <strong>My current stack:</strong> HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, React Native, Firebase, amogst others. I have also worked with WordPress, bootstrap and jquery in the past.
+        <strong>My current stack:</strong> <br />HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, React Native, Firebase, amogst others. I have also worked with WordPress, bootstrap and jquery in the past.
         </p>
       </div>
     </div>
