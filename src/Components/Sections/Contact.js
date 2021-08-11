@@ -1,5 +1,7 @@
 import React, { forwardRef } from "react";
 import classes from "./Contact.module.scss";
+import linkedinIcon from '../../assets/img/linkedin.png';
+import githubIcon from '../../assets/img/github.png';
 
 const Contact = forwardRef((_props, ref) => {
   return (
@@ -13,18 +15,23 @@ const Contact = forwardRef((_props, ref) => {
         <p>
           <strong>Email</strong>
           <br />
-          hello@toluls.com
+          <a href="mailto:hello@toluls.com" target="_blank" rel="noreferrer">hello@toluls.com</a>
         </p>
         
         <p>
           <strong>Phone</strong>
           <br />
-          +2348022669841
+          <a href="tel:+2348022669841" target="_blank" rel="noreferrer">+2348022669841</a>
         </p>
-
+        
         <div className={classes.icons}>
-          <span>GH</span>
-          <span>LI</span>
+          <a href="https://linkedin.com/in/tolulopeSaliu" target="_blank" rel="noreferrer">
+          <img src={linkedinIcon} alt="linkedinIcon icon"/>
+          </a>
+          
+          <a href="https://github.com/toluls" target="_blank" rel="noreferrer">
+          <img src={githubIcon} alt="githubIcon icon"/>
+          </a>
         </div>
       </div>
     </div>
