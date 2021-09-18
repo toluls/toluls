@@ -19,7 +19,7 @@ const About = forwardRef((props, ref) => {
         </p>
 
         <p>
-        <strong>My current stack/focus:</strong> <br />JAMStack, HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, NextJS, Gatsby, GraphQL, React Native, Firebase, amongst others. I have also worked with NodeJS, Express, MongoDB, WordPress, bootstrap, JQuery and JQuery Mobile during the course of my career.
+        <strong>My current stack/focus:</strong> <br />JAMStack, HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, NextJS, Gatsby, REST/GraphQL, React Native, Firebase, Serverless Architecture, Headless CMS, amongst others. I have also worked with NodeJS, Express, MongoDB, WordPress, Bootstrap, JQuery and JQuery Mobile during the course of my career.
         </p>
 
         <AppButton text="Contact Me" className={classes.action} onClick={props.onContactClick} />

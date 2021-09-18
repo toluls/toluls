@@ -29,14 +29,16 @@ const DisplayProject = (props) => {
             >
               View
             </a>
-            <a
-              href={props.sourceUrl}
-              target="_blank"
-              rel="noreferrer"
-              className={`${classes.action} ${classes.source}`}
-            >
-              Source
-            </a>
+            {props.sourceUrl && (
+              <a
+                href={props.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className={`${classes.action} ${classes.source}`}
+              >
+                Source
+              </a>
+            )}
           </div>
         </div>
       </div>
