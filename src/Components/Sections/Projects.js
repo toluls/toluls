@@ -4,6 +4,7 @@ import DisplayProject from "../Layout/DisplayProject";
 import grandCommerceImg from "../../assets/img/grand-commerce.jpg";
 import portfolioImg from "../../assets/img/toluls.jpg";
 import lockdownImg from "../../assets/img/lockdown-run.jpg";
+import canineLandImg from "../../assets/img/canine-land.jpg";
 
 
 const grandCommerceDetails = (
@@ -27,6 +28,12 @@ const portfolioDetails = (
 const lockdownDetails = (
   <p>
     This project consists of a single page app and an HTML5 runner game built in vanilla JavaScript. Both the app and game are coupled, sharing logic to give the user/player a nice, fun experience. Users can view their game details in the app and get bonus codes depending on how well they played the game. 
+  </p>
+);
+
+const canineLandDetails = (
+  <p>
+    I built this simple blog while teaching a student the JAMStack and serverless architecture concepts. The canine land blog was built with Gatsby, using Contentful as the headless CMS and deployed to Netlify. It was a good avenue to explain the concepts (and beauty) of GraphQL and using web hooks to trigger production builds on content change.
   </p>
 );
 
@@ -61,6 +68,15 @@ const Projects = forwardRef((_props, ref) => {
           stack="Vanilla JavaScript, HTML5, CSS3, SASS (SCSS)"
           details={lockdownDetails}
           image={lockdownImg}
+        />
+
+        <DisplayProject
+          name="Canine Land"
+          viewUrl="https://canine-land.toluls.com/"
+          stack="React, Gatsby, GraphQL, Headless CMS, Contentful, CSS Modules"
+          details={canineLandDetails}
+          image={canineLandImg}
+          right
         />
       </div>
     </div>
