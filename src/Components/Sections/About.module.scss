@@ -7,17 +7,6 @@
   color: $color-white;
   padding-bottom: 4rem;
 
-  & h1 {    
-    padding: 2rem;
-    font-weight: 300;
-    background-color: $color-black;
-    border-bottom: .5rem solid $color-white;
-
-    @include respond($mid) {
-      padding: 2rem 4.5rem;
-    }
-  }
-
   p {
     padding: 1.5rem;
     line-height: 1.5;
@@ -25,8 +14,26 @@
   }
 }
 
+.heading {
+  background-color: $color-black;
+  border-bottom: .5rem solid $color-white;
+
+  & h1 {
+    padding: 2rem 2.5rem;
+    font-weight: 300;
+    max-width: $max-container-width;
+    margin: 0 auto;
+
+    @include respond($mid) {
+      padding: 2rem 4.5rem;
+    }
+  }
+}
+
 .content {
   padding: 1rem;
+  max-width: $max-container-width;
+  margin: 0 auto;
 
   @include respond($mid) {
     padding: 5rem 3rem 3rem;

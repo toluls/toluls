@@ -5,7 +5,9 @@ import AppButton from "../UI/AppButton";
 const About = forwardRef((props, ref) => {
   return (
     <div className={classes.container}>
-      <h1 ref={ref}>About Me</h1>
+      <div className={classes.heading} ref={ref}>
+        <h1>About Me</h1>
+      </div>
       <div className={classes.content}>
         <p>
           My name is Tolulope Saliu. I'm a passionate frontend developer with

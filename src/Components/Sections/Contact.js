@@ -6,7 +6,9 @@ import githubIcon from '../../assets/img/github.png';
 const Contact = forwardRef((_props, ref) => {
   return (
     <div className={classes.container}>
-      <h1 ref={ref}>Contact Me</h1>
+      <div className={classes.heading} ref={ref}>
+        <h1>Contact Me</h1>
+      </div>
       <div className={classes.content}>
         <p>
           Thanks for stopping by! You can reach me via any of the means below.

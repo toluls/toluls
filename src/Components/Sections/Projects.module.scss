@@ -4,13 +4,18 @@
 
 .container {
   width: 100%;
-  
+}
+
+.heading {
+  background-color: $color-black;
+  color: $color-white;
+  border-bottom: .5rem solid $color-main;
+
   h1 {    
-    padding: 2rem;
     font-weight: 300;
-    background-color: $color-black;
-    color: $color-white;
-    border-bottom: .5rem solid $color-main;
+    padding: 2rem 2.5rem;
+    max-width: $max-container-width;
+    margin: 0 auto;
 
     @include respond($mid) {
       padding: 2rem 4.5rem;
@@ -20,4 +25,6 @@
 
 .content {
   padding: 2rem;
+  max-width: $max-container-width;
+  margin: 0 auto;
 }

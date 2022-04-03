@@ -40,7 +40,9 @@ const canineLandDetails = (
 const Projects = forwardRef((_props, ref) => {
   return (
     <div className={classes.container}>
-      <h1 ref={ref}>Projects</h1>
+      <div className={classes.heading} ref={ref}>
+        <h1>Projects</h1>
+      </div>
       <div className={classes.content}>
         <DisplayProject
           name="Grand Fashion"
