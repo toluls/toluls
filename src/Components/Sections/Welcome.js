@@ -11,7 +11,7 @@ const Welcome = props => {
       </div>
       <div className={classes.textContainer}>
         <h1>Hello, <span className={classes.name}>I'm Tolulope</span></h1>
-        <p>A creative and passionate front-end developer</p>
+        <p>A creative and passionate frontend engineer</p>
         <AppButton text="About Me" onClick={props.onAboutClick} />
         <AppButton text="Projects" outline onClick={props.onProjectClick} />
       </div>
