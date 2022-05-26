@@ -1,5 +1,5 @@
 ###  👋 Hello, I'm Tolulope
 
-I'm a passionate front-end developer with focus on web and mobile development. I love coding and enjoy transforming ideas and designs into clean, elegant code. I love JavaScript and React!
+I'm a passionate frontend engineer who enjoys transforming ideas and designs into clean, elegant code to create effective user-friendly websites and apps.
 
 Visit my website at [toluls.com](https://toluls.com)
