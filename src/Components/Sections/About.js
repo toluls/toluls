@@ -10,8 +10,7 @@ const About = forwardRef((props, ref) => {
       </div>
       <div className={classes.content}>
         <p>
-          My name is Tolulope Saliu. I'm a passionate frontend engineer with
-          focus on React and JAMStack tech. I have <strong>over four years</strong> experience in transforming ideas and designs into clean, elegant code and products. For formal education, I have a Bachelor of Science in Psychology.
+          My name is Tolulope Saliu. I'm a passionate software engineer with focus on frontend development. I have <strong>about seven years</strong> experience in transforming ideas and designs into clean, elegant code and products using various technologies. For formal education, I have a Bachelor of Science in Psychology.
         </p>
 
         <p>
@@ -21,7 +20,7 @@ const About = forwardRef((props, ref) => {
         </p>
 
         <p>
-        <strong>My current stack/focus:</strong> <br />HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, NextJS, Gatsby, REST/GraphQL, Firebase, Serverless Architecture, Headless CMS, amongst others. I have also worked with NodeJS, Express, MongoDB, WordPress, Bootstrap, JQuery and JQuery Mobile during the course of my career.
+        <strong>My current stack/focus:</strong> <br />HTML5, CSS3, JavaScript, TypeScript, SASS, React, Redux, NextJS, Gatsby, REST/GraphQL, Firebase, Serverless Architecture, GCP, AWS, SQL, GIT, Headless CMS, amongst others. I have also worked with NodeJS, Express, MongoDB, Webflow, WordPress, Bootstrap, JQuery and JQuery Mobile during the course of my career.
         </p>
 
         <AppButton text="Contact Me" className={classes.action} onClick={props.onContactClick} />
